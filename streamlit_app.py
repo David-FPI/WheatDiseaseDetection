@@ -34,7 +34,7 @@ with streamlit_analytics.track():
 	    mod = YOLO('best.pt')
 	    return mod
 	
-	languages = ["English", "ਪੰਜਾਬੀ"]
+	languages = ["English", "Tiếng Việt"]
 	sel_lang = st.radio(
 		"Language",
 		options=languages,
@@ -55,7 +55,7 @@ with streamlit_analytics.track():
 	    col[1].text('')
 	    if selected_language == "English":
 	        col[1].markdown("<h1 style='text-align: center; color: white;'>BTEC A-Flamingo Club</h1>", unsafe_allow_html=True)
-	    elif selected_language == "हिंदी":
+	    elif selected_language == "Tiếng Việt":
 	        col[1].markdown("<h1 style='text-align: center; color: white;'>वीटचेक - गेहूँ रोग का पता लगाये</h1>", unsafe_allow_html=True)
 	   
 	
@@ -74,7 +74,7 @@ with streamlit_analytics.track():
       		The economic impact is profound, affecting not only farmers but also the global food supply chain, 
 		leading to increased prices and food insecurity in vulnerable regions.''')
 		
-	elif selected_language == "हिंदी":
+	elif selected_language == "Tiếng Việt":
 	    # About the app section
 	    with st.container():
 	        st.header('वैश्विक खाद्य सुरक्षा की रक्षा करना')
@@ -125,7 +125,7 @@ with streamlit_analytics.track():
 		with col1[6]:
 		        st.image('yellow_rust_256.png', caption='Yellow Rust')
 		
-	elif selected_language == "हिंदी":
+	elif selected_language == "Tiếng Việt":
 		col = st.columns(7)
 		with col[0]:
 			st.image('aphid_1.jpeg', caption='एफिड')
