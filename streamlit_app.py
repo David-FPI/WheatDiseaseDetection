@@ -34,7 +34,7 @@ with streamlit_analytics.track():
 	    mod = YOLO('best.pt')
 	    return mod
 	
-	languages = ["English", "ਪੰਜਾਬੀ", "हिंदी"]
+	languages = ["English", "ਪੰਜਾਬੀ"]
 	sel_lang = st.radio(
 		"Language",
 		options=languages,
@@ -57,8 +57,7 @@ with streamlit_analytics.track():
 	        col[1].markdown("<h1 style='text-align: center; color: white;'>BTEC A-Flamingo Club</h1>", unsafe_allow_html=True)
 	    elif selected_language == "हिंदी":
 	        col[1].markdown("<h1 style='text-align: center; color: white;'>वीटचेक - गेहूँ रोग का पता लगाये</h1>", unsafe_allow_html=True)
-	    elif selected_language == "ਪੰਜਾਬੀ":
-	        col[1].markdown("<h1 style='text-align: center; color: white;'>ਵੀਟਚੈੱਕ - ਕਣਕ ਦੀ ਬਿਮਾਰੀ ਦਾ ਪਤਾ ਲਗਾਓ</h1>", unsafe_allow_html=True)
+	   
 	
 	if selected_language == "English":
 	    # About the app section
@@ -90,21 +89,7 @@ with streamlit_analytics.track():
       		आर्थिक प्रभाव गहरा है, न केवल किसानों को बल्कि वैश्विक खाद्य आपूर्ति श्रृंखला को भी प्रभावित कर रहा है। 
 		जिससे कमजोर क्षेत्रों में कीमतें बढ़ीं और खाद्य असुरक्षा पैदा हुई।''')
 		    
-	elif selected_language == "ਪੰਜਾਬੀ":
-	    # About the app section
-	    with st.container():
-	        st.header('ਗਲੋਬਲ ਭੋਜਨ ਸੁਰੱਖਿਆ ਦੀ ਸੁਰੱਖਿਆ')
-	        st.write('''
-	        ਕਣਕ ਮਨੁੱਖੀ ਖਪਤ ਲਈ ਸਭ ਤੋਂ ਮਹੱਤਵਪੂਰਨ ਫਸਲਾਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ, ਜੋ ਦੁਨੀਆ ਭਰ ਦੇ ਅਰਬਾਂ ਲੋਕਾਂ ਨੂੰ ਭੋਜਨ ਦਿੰਦੀ ਹੈ। 
-  		ਹਾਲਾਂਕਿ, ਇਹ ਜ਼ਰੂਰੀ ਫਸਲ ਰੋਗਾਣੂਆਂ ਅਤੇ ਕੀੜਿਆਂ ਕਾਰਨ ਹੋਣ ਵਾਲੀਆਂ ਬਿਮਾਰੀਆਂ ਦੀ ਇੱਕ ਵਿਸ਼ਾਲ ਸ਼੍ਰੇਣੀ ਤੋਂ ਲਗਾਤਾਰ ਖਤਰੇ ਵਿੱਚ ਹੈ। 
-    		ਹਰ ਸਾਲ, ਇਹਨਾਂ ਧਮਕੀਆਂ ਦੇ ਨਤੀਜੇ ਵਜੋਂ ਮਹੱਤਵਪੂਰਨ ਨੁਕਸਾਨ ਹੁੰਦਾ ਹੈ - ਵਿਸ਼ਵਵਿਆਪੀ ਕਣਕ ਉਤਪਾਦਨ ਦੇ 21.5% ਦੇ ਬਰਾਬਰ। 
-      		ਇਹ ਇੱਕ ਹੈਰਾਨੀਜਨਕ 209 ਮਿਲੀਅਨ ਟਨ ਕਣਕ ਦਾ ਅਨੁਵਾਦ ਕਰਦਾ ਹੈ, ਜਿਸਦੀ ਕੀਮਤ $31 ਬਿਲੀਅਨ ਹੈ, ਸਾਲਾਨਾ ਗੁਆਚ ਜਾਂਦੀ ਹੈ।''')
-	        st.subheader('ਚੁਣੌਤੀ ਨੂੰ ਸਮਝਣਾ')
-	        st.write('''ਕਣਕ ਦੀ ਬਿਮਾਰੀ ਦੀ ਚੁਣੌਤੀ ਬਹੁਪੱਖੀ ਹੈ। ਕਣਕ ਦੀ ਫ਼ਸਲ ਉੱਲੀ, ਬੈਕਟੀਰੀਆ, ਵਾਇਰਸ ਅਤੇ ਕੀੜਿਆਂ ਸਮੇਤ ਵੱਖ-ਵੱਖ ਜਰਾਸੀਮਾਂ ਲਈ ਸੰਵੇਦਨਸ਼ੀਲ ਹੁੰਦੀ ਹੈ, 
-  		ਹਰ ਇੱਕ ਪੂਰੇ ਖੇਤਰ ਨੂੰ ਤਬਾਹ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੈ ਜੇਕਰ ਜਲਦੀ ਖੋਜਿਆ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਨਾ ਕੀਤਾ ਜਾਵੇ। 
-    		ਕੀੜਿਆਂ ਜਿਵੇਂ ਕਿ ਐਫੀਡਜ਼ ਅਤੇ ਸਟੈਮ ਫਲਾਈਜ਼ ਦੇ ਨਾਲ-ਨਾਲ ਜੰਗਾਲ, ਫ਼ਫ਼ੂੰਦੀ ਅਤੇ ਝੁਲਸ ਵਰਗੀਆਂ ਬਿਮਾਰੀਆਂ, ਉਪਜ ਦੀ ਗੁਣਵੱਤਾ ਅਤੇ ਮਾਤਰਾ ਨੂੰ ਬਹੁਤ ਜ਼ਿਆਦਾ ਘਟਾ ਸਕਦੀਆਂ ਹਨ। 
-      		ਆਰਥਿਕ ਪ੍ਰਭਾਵ ਡੂੰਘਾ ਹੈ, ਜੋ ਨਾ ਸਿਰਫ਼ ਕਿਸਾਨਾਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦਾ ਹੈ, ਸਗੋਂ ਵਿਸ਼ਵ ਖੁਰਾਕ ਸਪਲਾਈ ਲੜੀ ਨੂੰ ਵੀ ਪ੍ਰਭਾਵਿਤ ਕਰਦਾ ਹੈ, 
-		ਜਿਸ ਨਾਲ ਕਮਜ਼ੋਰ ਖੇਤਰਾਂ ਵਿੱਚ ਵਧੀਆਂ ਕੀਮਤਾਂ ਅਤੇ ਭੋਜਨ ਦੀ ਅਸੁਰੱਖਿਆ ਹੁੰਦੀ ਹੈ।''')
+	
 
 	# Display disease images with captions
 	if selected_language == "English":
@@ -173,38 +158,7 @@ with streamlit_analytics.track():
 		with col1[6]:
 		        st.image('yellow_rust_256.png', caption='पीला रतुआ')
 
-	elif selected_language == "ਪੰਜਾਬੀ":
-		col = st.columns(7)
-		with col[0]:
-			st.image('aphid_1.jpeg', caption='ਐਫੀਡ')
-		with col[1]:
-		        st.image('brown_rust_3.jpeg', caption='ਭੂਰਾ ਜੰਗਾਲ')
-		with col[2]:
-			st.image('mite_26.jpeg', caption='ਮਾਈਟ')
-		with col[3]:
-		        st.image('stem_fly_30.jpeg', caption='ਸਟੈਮ ਫਲਾਈ')
-		with col[4]:
-		        st.image('black_rust_1.jpeg', caption='ਕਾਲਾ ਜੰਗਾਲ')
-		with col[5]:
-		        st.image('common_root_rot_55.jpeg', caption='ਆਮ ਜੜ੍ਹ ਸੜਨ')
-		with col[6]:
-		        st.image('leaf_blight_38.jpeg', caption='ਪੱਤਾ ਝੁਲਸ')
-			
-		col1 = st.columns(7)
-		with col1[0]:
-		        st.image('septoria_5.jpeg.png', caption='ਸੇਪਟੋਰੀਆ')
-		with col1[1]:
-		        st.image('tan_spot_24.jpeg', caption='ਟੈਨ ਸਪਾਟ')
-		with col1[2]:
-		        st.image('blast_1.jpeg', caption='ਬਲਾਸਟ')
-		with col1[3]:
-		        st.image('fusarium_head_blight_test_0.png', caption='ਫੁਸਾਰਿਅਮ ਸਿਰ ਝੁਲਸ')
-		with col1[4]:
-		        st.image('mildew_82.png', caption='ਫ਼ਫ਼ੂੰਦੀ')
-		with col1[5]:
-		        st.image('smut_test_0.png', caption='ਸ੍ਮਟ')
-		with col1[6]:
-		        st.image('yellow_rust_256.png', caption='ਪੀਲੀ ਜੰਗਾਲ')
+
 
 	if selected_language == "English":
 		st.subheader('The Role of Technology in Early Detection')
