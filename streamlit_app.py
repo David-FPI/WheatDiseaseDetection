@@ -48,7 +48,7 @@ with streamlit_analytics.track():
 	# Logo and title section
 	with st.container():
 	    col = st.columns([3,9])
-	    col[0].image('logo.png')
+	    col[0].image('"D:\A-Flaminggo\447678075_767488495531324_3390405170555493979_n.jpg"')
 	    col[1].text('')
 	    col[1].text('')
 	    col[1].text('')
