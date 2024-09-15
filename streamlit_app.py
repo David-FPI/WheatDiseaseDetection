@@ -3,11 +3,8 @@ import streamlit as st
 from PIL import Image
 import streamlit_analytics
 
-st.set_page_config(
-    page_title="BTEC A-Flamingo Club",
-    page_icon=r"D:\A-Flaminggo\447678075_767488495531324_3390405170555493979_n.jpg",
-    layout="wide"
-)
+st.set_page_config(page_title="BTEC A-Flamingo Club", page_icon="D:/A-Flaminggo/447678075_767488495531324_3390405170555493979_n.jpg", layout="wide")
+
 
 
 with streamlit_analytics.track():
