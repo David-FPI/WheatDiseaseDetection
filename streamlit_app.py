@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import streamlit_analytics
 
-st.set_page_config(page_title="BTEC A-Flamingo Club", page_icon="https://th.bing.com/th/id/OIP.1ufbAFZkjHWtoYySOiInMgHaE8?rs=1&pid=ImgDetMain", layout="wide")
+# st.set_page_config(page_title="BTEC A-Flamingo Club", page_icon="https://th.bing.com/th/id/OIP.1ufbAFZkjHWtoYySOiInMgHaE8?rs=1&pid=ImgDetMain", layout="wide")
 
 
 
